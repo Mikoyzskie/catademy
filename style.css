@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu&display=swap");
+@import url(assets/styles/header.module.css);
+@import url(assets/styles/intro.module.css);
+
+:root {
+  --bg-color: #1a173d;
+  --main-purple: #5133a6;
+  --main-orange: #e25300;
+  --main-orange-hover: #ff5d00;
+  --purple: rgb(133, 100, 187);
+  --gradient-purple: linear-gradient(
+    rgb(133, 100, 187) 0%,
+    rgb(102, 44, 197) 85%
+  );
+  --orange: rgb(245, 194, 146);
+  --gradient-orange: radial-gradient(
+    rgb(245, 194, 146) 25%,
+    rgb(241, 150, 65) 85%
+  );
+  --inner-text: 18px/20.68px "Ubuntu", sans-serif;
+  --inner-text-small: 16px/19.2px "Ubuntu", sans-serif;
+  --header-1: 70px/86.92px "Righteous", sans-serif;
+  --header-2: 48px/59.6px "Righteous", sans-serif;
+  --header-3: 36px/44.7px "Righteous", sans-serif;
+  --subheader: 34px/42.22px "Righteous", sans-serif;
+  --title: 24px/29.8px "Righteous", sans-serif;
+  --button: 20px/24.83px "Righteous", sans-serif;
+  --button-small: 16px/19.87px "Righteous", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+body {
+  background-color: #1a173d;
+  padding-top: 51px;
+}
+
+.container {
+  max-width: 1144px;
+  margin: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 880px) {
+  body {
+    padding-top: 48px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    padding-top: 30px;
+  }
+}

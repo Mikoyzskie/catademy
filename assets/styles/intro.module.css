@@ -1,0 +1,139 @@
+.intro {
+  align-items: center;
+  margin-top: 109px;
+  color: white;
+  display: flex;
+  gap: 35px;
+  padding: 0 40px;
+}
+
+.intro .intro__content {
+  background-image: var(--gradient-purple);
+  border-radius: 25px;
+  padding: 50px 50px;
+}
+
+.intro__content .intro__title {
+  font-family: "Righteous", sans-serif;
+  font-size: clamp(2.25rem, -2.0904rem + 9.0426vw, 4.375rem);
+  line-height: auto;
+}
+
+.intro__content .intro__subtitle {
+  margin-bottom: 31px;
+  align-items: center;
+  display: flex;
+  gap: 52px;
+}
+
+.intro__subtitle .intro__subtitle-text {
+  font: var(--title);
+}
+
+.intro__subtitle .intro__subtitle-image {
+  height: 80px;
+  width: 80px;
+}
+
+.intro .intro__image {
+  transform: scaleX(-1);
+  max-width: 400px;
+}
+
+.intro__content .intro__footer {
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
+}
+
+.intro__footer .intro__button {
+  font: var(--button);
+  border-radius: 24px;
+}
+
+.intro__footer .intro__button:first-child {
+  background-color: var(--main-orange);
+  padding: 16.88px 49.85px;
+  color: white;
+  border: none;
+}
+
+.intro__footer .intro__button:last-child {
+  border: 2px solid var(--main-orange);
+  background-color: transparent;
+  color: var(--main-orange);
+  padding: 12px 16.13px;
+  align-items: center;
+  display: flex;
+  gap: 9px;
+  text-wrap: nowrap;
+}
+
+.intro__footer .intro__button:first-child:hover {
+  background-color: var(--main-orange-hover);
+  cursor: pointer;
+}
+
+.intro__footer .intro__button:last-child:hover {
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.intro__footer .intro__button:last-child:hover svg .fill-000000 {
+  fill: white;
+}
+
+@media only screen and (max-width: 880px) {
+  .intro {
+    margin-top: 52px;
+    gap: 12px;
+  }
+
+  .intro .intro__content {
+    padding: 36px 31px;
+  }
+
+  .intro__content .intro__subtitle {
+    gap: 24px;
+  }
+  .intro__subtitle .intro__subtitle-text {
+    font: var(--inner-text-small);
+  }
+
+  .intro__content .intro__footer {
+    gap: unset;
+    justify-content: space-between;
+  }
+
+  .intro .intro__image {
+    max-width: 257px;
+  }
+
+  .intro__content .intro__footer {
+  }
+
+  .intro__footer .intro__button {
+    font: var(--button-small);
+    border-radius: 50px;
+  }
+
+  .intro__footer .intro__button:first-child {
+    padding: 9.5px 34.88px;
+  }
+  .intro__footer .intro__button:last-child {
+    padding: 10px 12px;
+  }
+
+  .intro__footer .intro__button:last-child svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .intro {
+    margin-top: 26px;
+  }
+}
