@@ -2,6 +2,8 @@
 @import url(assets/styles/header.module.css);
 @import url(assets/styles/intro.module.css);
 @import url(assets/styles/footer.module.css);
+@import url(assets/styles/info.module.css);
+@import url(assets/styles/opportunity.module.css);
 @import url(assets/fonts/style.css);
 
 :root {
@@ -35,12 +37,17 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1,
 h2,
 h3 {
   font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
