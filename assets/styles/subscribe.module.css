@@ -1,0 +1,155 @@
+.subscribe {
+  padding: 0 40px 0 40px;
+  margin-bottom: 106px;
+}
+
+.subscribe__wrapper {
+  border-radius: 25px;
+  color: white;
+  background: var(--gradient-purple);
+  max-width: 989px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  padding: 34px 270px 34px 35px;
+  position: relative;
+}
+
+.subscribe__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subscribe__title {
+  font: var(--header-2);
+}
+
+.subscribe__subtitle {
+  font: var(--inner-text-small);
+}
+
+.subscribe__button {
+  font: var(--button-small);
+  border: none;
+  padding: 10.5px 36px;
+  color: white;
+  background-color: var(--main-orange);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.subscribe__button:hover {
+  cursor: pointer;
+  background-color: var(--main-orange-hover);
+}
+
+.subscribe__input {
+  max-width: 602px;
+  width: 100%;
+  display: flex;
+  outline: none;
+}
+
+.subscribe__email {
+  flex-grow: 1;
+  font: var(--inner-text);
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  outline: none;
+  padding: 0 33px;
+  width: 100%;
+}
+
+.subscribe__email::placeholder {
+  color: var(--main-purple);
+  opacity: 55%;
+}
+
+.subscribe__image {
+  position: absolute;
+  right: -176px;
+  bottom: -85px;
+  height: 529px;
+  width: auto;
+  transform: scaleX(-1);
+}
+
+.subscribe__subtitle-mobile {
+  font: var(--inner-text-small);
+  display: none;
+}
+
+@media only screen and (max-width: 1283px) {
+  .subscribe {
+    padding: 0 185px 0 40px;
+  }
+}
+
+@media only screen and (max-width: 956px) {
+  .subscribe {
+    padding: 0 40px;
+  }
+  .subscribe__image {
+    right: -24px;
+    bottom: unset;
+    top: -185px;
+    height: 313px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .subscribe__title {
+    font: var(--header-3);
+    padding-right: 200px;
+  }
+
+  .subscribe__wrapper {
+    padding: 60px 44px 34px 42px;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .subscribe {
+    margin-bottom: 30px;
+  }
+
+  .subscribe__image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleX(-1);
+    top: -185px;
+    height: 251px;
+  }
+  .subscribe__title {
+    font: var(--title);
+    padding-right: 0;
+  }
+
+  .subscribe__subtitle {
+    display: none;
+  }
+  .subscribe__subtitle-mobile {
+    display: block;
+  }
+
+  .subscribe__wrapper {
+    padding: 48px 24px 24px 26px;
+    gap: 20px;
+  }
+
+  .subscribe__input {
+    gap: 9px;
+    flex-direction: column;
+  }
+
+  .subscribe__email {
+    padding: 9px 33px;
+    border-radius: 12px;
+  }
+
+  .subscribe__button {
+    border-radius: 12px;
+  }
+}

@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="container">
-      <a href="/" class="logo">
+      <a href="/" class="logo" aria-label="Logo to home page link">
         <img
           src="./assets/images/logo.webp"
           alt="Catademy Logo"
@@ -19,11 +19,19 @@
         <h3 class="righteous-regular">Catademy</h3>
       </a>
       <nav class="menu">
-        <a href="#" class="menu__link">About</a>
-        <a href="#" class="menu__link">Contacts</a>
-        <a href="#" class="menu__link">Lessons</a>
-        <a href="#" class="menu__link">Gallery</a>
-        <a href="#" class="menu__link">Subscribe</a>
+        <a href="#" class="menu__link" aria-label="Link to About page">About</a>
+        <a href="#" class="menu__link" aria-label="Link to Contacts page"
+          >Contacts</a
+        >
+        <a href="#" class="menu__link" aria-label="Link to Lessons page"
+          >Lessons</a
+        >
+        <a href="#" class="menu__link" aria-label="Link to Gallery page"
+          >Gallery</a
+        >
+        <a href="#" class="menu__link" aria-label="Link to Subscribe page"
+          >Subscribe</a
+        >
       </nav>
       <img
         src="./assets/images/paw.svg"
@@ -148,15 +156,14 @@
                 </div>
               </div>
               <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+                <a href="#slide-1" aria-label="Slide to comment 1"></a>
+                <a href="#slide-2" aria-label="Slide to comment 2"></a>
+                <a href="#slide-3" aria-label="Slide to comment 3"></a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section class="opportunities container">
         <div class="opportunities-header">
           <h2 class="opportunities__title">
@@ -221,32 +228,120 @@
           </div>
         </div>
       </section>
+      <section class="gallery container">
+        <div class="gallery-header">
+          <span class="gallery__title">Enjoy Our Gallery</span>
+          <p class="gallery__subtitle">
+            Do not be shy to review and like the photos
+          </p>
+        </div>
+        <div class="photo__gallery">
+          <div class="photo__wrapper">
+            <div class="photo__filter"></div>
+            <img src="./assets/images/cat1.webp" alt="" class="photo" />
+          </div>
+          <div class="photo__wrapper">
+            <div class="photo__filter"></div>
+            <img src="./assets/images/cat2.webp" alt="" class="photo" />
+          </div>
+          <div class="photo__wrapper">
+            <div class="photo__filter"></div>
+            <img src="./assets/images/cat3.webp" alt="" class="photo" />
+          </div>
+          <div class="photo__wrapper">
+            <div class="photo__filter"></div>
+            <img src="./assets/images/cat4.webp" alt="" class="photo" />
+          </div>
+          <div class="photo__wrapper">
+            <div class="photo__filter"></div>
+            <img src="./assets/images/cat5.webp" alt="" class="photo" />
+          </div>
+          <div class="photo__wrapper">
+            <div class="photo__filter"></div>
+            <img src="./assets/images/cat6.webp" alt="" class="photo" />
+          </div>
+        </div>
+      </section>
+      <section class="subscribe container">
+        <div class="subscribe__wrapper">
+          <img
+            src="./assets/images/catsubs.webp"
+            alt=""
+            class="subscribe__image"
+          />
+          <div class="subscribe__header">
+            <span class="subscribe__title">You are in great paws!</span>
+            <p class="subscribe__subtitle">
+              Subscribe to get more information about upcoming courses and new
+              videos. You will also get an opportunity to share with other users
+              your unique knowledge by writing articles and posting video
+              lessons!
+            </p>
+            <p class="subscribe__subtitle-mobile">
+              Subscribe to get more information about upcoming courses and new
+              videos.
+            </p>
+          </div>
+          <div class="subscribe__input">
+            <input
+              type="text"
+              class="subscribe__email"
+              placeholder="Your email address"
+            />
+            <button class="subscribe__button">Subscribe</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer__line"></div>
       <div class="footer__container">
         <ul>
           <li>
-            <a href="#" class="social__link"
+            <a
+              href="#"
+              class="social__link"
+              aria-label="
+            Go to Youtube page"
               ><span class="icon-youtube"></span
             ></a>
           </li>
           <li>
-            <a href="#" class="social__link"
+            <a
+              href="#"
+              class="social__link"
+              aria-label="
+            Go to Instagram page"
               ><span class="icon-instagram"></span
             ></a>
           </li>
           <li>
-            <a href="#" class="social__link"
+            <a
+              href="#"
+              class="social__link"
+              aria-label="
+            Go to Facebook page"
               ><span class="icon-facebook"></span
             ></a>
           </li>
         </ul>
         <nav>
-          <a href="#" class="footer__link">Contacts</a>
-          <a href="#" class="footer__link">FAQ</a>
-          <a href="#" class="footer__link">Privacy Policy</a>
-          <a href="#" class="footer__link">Terms & Conditions</a>
+          <a href="#" class="footer__link" aria-label="Link to Contacts page"
+            >Contacts</a
+          >
+          <a href="#" class="footer__link" aria-label="Link to FAQ page">FAQ</a>
+          <a
+            href="#"
+            class="footer__link"
+            aria-label="Link to Privacy Policy page"
+            >Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="footer__link"
+            aria-label="Link to Terms and Conditions page"
+            >Terms & Conditions</a
+          >
         </nav>
       </div>
     </footer>

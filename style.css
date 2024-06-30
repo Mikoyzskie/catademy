@@ -4,6 +4,8 @@
 @import url(assets/styles/footer.module.css);
 @import url(assets/styles/info.module.css);
 @import url(assets/styles/opportunity.module.css);
+@import url(assets/styles/gallery.module.css);
+@import url(assets/styles/subscribe.module.css);
 @import url(assets/fonts/style.css);
 
 :root {
